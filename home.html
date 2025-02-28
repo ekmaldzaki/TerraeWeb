@@ -19,7 +19,7 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="./home.html">
               <img
                 src="./assets/images/01_terrae.png"
                 alt="Terrae Logo"
@@ -40,14 +40,37 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto d-flex flex-lg-row">
                 <li class="nav-item m-2">
-                  <a class="btn btn-outline-light" href="./home.html"
-                    >About Terrae</a
+                  <a class="nav-link" href="#ourProjects">Projects</a>
+                </li>
+                <li class="nav-item dropdown m-2">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >About</a
                   >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Get to know us</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Become a volunteer</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Lowongan Pekerjaan</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Research</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item m-2">
-                  <a class="btn btn-outline-light" href="./guildhouse.html"
-                    >GuildHouse</a
-                  >
+                  <a class="nav-link" href="./guildhouse.html">Guild House</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a class="nav-link" href="./guildhouse.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -88,60 +111,387 @@
       </div>
     </section>
 
-    <!-- other section -->
+    <!-- our activity section -->
     <section>
       <div class="container py-5">
         <h2
           class="display-5 fw-semibold text-body-emphasis lh-1 mb-5 text-center"
         >
-          Title2
+          Our Activities
         </h2>
+        <!-- Cards Row -->
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card">
               <img
-                src="./assets/images/insert_image_here.svg"
+                src="./assets/images/gambar9.jpg"
                 class="card-img-top"
                 alt="Card Image"
+                style="object-fit: cover"
+                height="267"
               />
               <div class="card-body">
-                <h5 class="card-title">Card Title 1</h5>
-                <p class="card-text">
-                  This is a short description for the first card.
+                <h5 class="card-title">Relawan Internasional</h5>
+                <p class="card-text justify-mytext">
+                  Berkontribusi dalam ekspedisi ekowisata bersama tamu
+                  mancanegara. Bantu mengangkat potensi alam melalui aksi nyata
+                  yang berkelanjutan!
                 </p>
-                <a href="#" class="btn btn-dark">Learn More</a>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRelawan"
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
               <img
-                src="./assets/images/insert_image_here.svg"
+                src="./assets/images/gambar2.jpg"
                 class="card-img-top"
                 alt="Card Image"
               />
               <div class="card-body">
-                <h5 class="card-title">Card Title 2</h5>
-                <p class="card-text">
-                  This is a short description for the second card.
+                <h5 class="card-title">Lowongan Kerja</h5>
+                <p class="card-text justify-mytext">
+                  Ambil misi, kerjakan tugas, dan bantu komunitas! Dari
+                  membersihkan lingkungan hingga membantu lansia, setiap
+                  pekerjaan mendukung ekowisata berkelanjutan.
                 </p>
-                <a href="#" class="btn btn-dark">Learn More</a>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPekerja"
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card">
               <img
-                src="./assets/images/insert_image_here.svg"
+                src="./assets/images/gambar7.jpg"
                 class="card-img-top"
                 alt="Card Image"
               />
               <div class="card-body">
-                <h5 class="card-title">Card Title 3</h5>
-                <p class="card-text">
-                  This is a short description for the third card.
+                <h5 class="card-title">Peneliti</h5>
+                <p class="card-text justify-mytext">
+                  Menggali wawasan dan menemukan solusi! Lakukan riset,
+                  eksperimen, dan uji coba untuk membuka peluang baru bagi
+                  daerah dan lingkungan.
                 </p>
-                <a href="#" class="btn btn-dark">Learn More</a>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPeneliti"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modals -->
+        <div
+          class="modal fade"
+          id="modalRelawan"
+          tabindex="-1"
+          aria-labelledby="modalRelawanTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalRelawanTitle">
+                  Relawan Internasional
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Berikut adalah informasi untuk bergabung sebagai volunteer
+                internasional di Terrae Basecamp melalui aplikasi Worldpackers:
+                <br />
+                <br />
+                <strong>Persyaratan: </strong><br />
+                - Menginap minimal 1 minggu <br />
+                - Biaya per hari: 20 USD <br />
+                - Usia minimal 18 tahun <br />
+                <strong>Fasilitas yang didapatkan:</strong> <br />
+                -Tempat tinggal di rumah tradisional <br />
+                - Fasilitas antar jemput <br />
+                - Makan 3 kali sehari <br />
+                - Kesempatan untuk memperluas relasi <br />
+                - E-Sertifikat <br />
+                - Perjalanan wisata ke destinasi alam yang menakjubkan <br />
+                <br />
+                Untuk memulai petualangan Anda, tekan tombol
+                Reservasi di halaman ini!
+                <br />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a
+                  href="https://www.worldpackers.com/locations/terrae-basecamp-graha-semeru-housing"
+                  class="btn btn-success"
+                  >Reservasi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalPekerja"
+          tabindex="-1"
+          aria-labelledby="modalPekerjaTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalPekerjaTitle">
+                  Lowongan Kerja - Pekerja Lepas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Berikut adalah informasi untuk bergabung sebagai pekerja lepas
+                di Terrae Basecamp melalui Guild House: <br />
+                <br />
+                <strong>Persyaratan:</strong> <br />
+                - Usia minimal 18 tahun <br />
+                - Pendidikan minimal SMA/SMK Sederajat <br />
+                - Kemampuan berkomunikasi yang baik <br />
+                - Bertanggung jawab <br />
+                <strong>Fasilitas yang didapatkan:</strong> <br />
+                - Fasilitas antar jemput (Area Lumajang) <br />
+                - Gaji mulai 50k/per jam <br />
+                <br />
+                Untuk memulai petualangan Anda, tekan tombol Daftar
+                Sekarang di halaman ini!
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a href="./guildhouse.html" class="btn btn-success">Daftar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalPeneliti"
+          tabindex="-1"
+          aria-labelledby="modalPenelitiTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalPenelitiTitle">
+                  Daftar Menjadi Peneliti
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Berikut adalah informasi untuk bergabung sebagai peneliti di
+                Terrae Basecamp melalui aplikasi Google Form: <br />
+                <br />
+                <strong>Persyaratan:</strong> <br />
+                - Mahasiswa Aktif minimal semester 3 <br />
+                - Perguruan tinggi manapun <br />
+                - IPK minimal 3,0 <br />
+                - Program Studi relevan dengan bidang pariwisata, lingkungan,
+                dan sosial <br />
+                - Biaya per bulan Rp 300.000 <br />
+                <strong>Fasilitas yang didapatkan:</strong> <br />
+                - Tempat tinggal di rumah tradisional <br />
+                - Kesempatan untuk memperluas relasi internasional <br />
+                - Perjalanan wisata ke destinasi alam yang menakjubkan <br />
+                <br />
+                Untuk memulai petualangan Anda, tekan tombol Daftar
+                Sekarang di halaman ini!
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a href="./home.html" class="btn btn-success">Daftar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="ourProjects">
+      <div class="container py-5">
+        <h2
+          class="display-5 fw-semibold text-body-emphasis lh-1 mb-5 text-center"
+        >
+          Our Projects
+        </h2>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./assets/images/gambar3_1.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="400"
+              height="400"
+              loading="lazy"
+              style="border-radius: 15px"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Ekowisata
+            </h3>
+            <p class="lead justify-mytext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              placerat luctus diam ut fermentum. Integer mollis, odio finibus
+              viverra porta, enim felis commodo turpis, nec dictum ipsum ligula
+              non sem. Ut faucibus molestie euismod. Phasellus at ligula
+              bibendum, accumsan est ac, convallis elit. Aenean bibendum urna
+              vel blandit tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./assets/images/gambar14_1.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="400"
+              height="400"
+              loading="lazy"
+              style="border-radius: 15px"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Lingkungan
+            </h3>
+            <p class="lead justify-mytext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              placerat luctus diam ut fermentum. Integer mollis, odio finibus
+              viverra porta, enim felis commodo turpis, nec dictum ipsum ligula
+              non sem. Ut faucibus molestie euismod. Phasellus at ligula
+              bibendum, accumsan est ac, convallis elit. Aenean bibendum urna
+              vel blandit tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./assets/images/gambar13.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="400"
+              height="350"
+              loading="lazy"
+              style="border-radius: 15px"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Sosial
+            </h3>
+            <p class="lead justify-mytext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              placerat luctus diam ut fermentum. Integer mollis, odio finibus
+              viverra porta, enim felis commodo turpis, nec dictum ipsum ligula
+              non sem. Ut faucibus molestie euismod. Phasellus at ligula
+              bibendum, accumsan est ac, convallis elit. Aenean bibendum urna
+              vel blandit tincidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section>
+      <div class="container">
+        <div class="row align-items-md-stretch">
+          <!-- Left Side (Title) -->
+          <div class="col-md-6">
+            <div class="h-100 p-5 rounded-3">
+              <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Terrae
+              </h3>
+              <p>Let's explore with us!</p>
+            </div>
+          </div>
+
+          <!-- Right Side (About & Contact Side by Side) -->
+          <div class="col-md-6">
+            <div class="row mx-5">
+              <!-- About Section -->
+              <div class="col-md-6">
+                <div class="h-100 p-4 bg-body-tertiary border rounded-3">
+                  <h2>About</h2>
+                  <ul class="list-unstyled small">
+                    <li><a href="">Code of Conduct</a></li>
+                    <li><a href="">Frequently Asked Questions</a></li>
+                    <li><a href="">Guild House</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Contact Section -->
+              <div class="col-md-6">
+                <div class="h-100 p-4 bg-body-tertiary border rounded-3">
+                  <h2>Contact</h2>
+                  <p>
+                    Reach out to us via <strong>contact@example.com</strong> or
+                    call us at <strong>+123 456 7890</strong>.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
