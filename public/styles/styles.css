@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  #navbarNav .navbar-nav {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .btn {
+    width: 100%;
+  }
+}
+
+.justify-mytext {
+  text-align: justify;
+}
