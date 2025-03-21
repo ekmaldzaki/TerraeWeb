@@ -151,6 +151,51 @@
       </div>
     </section>
 
+    <!-- sponsor section -->
+    <section id="ourPartners">
+      <div class="py-5">
+        <div class="container text-center">
+          <h2 class="display-5 fw-semibold text-body-emphasis lh-1 mb-5">
+            Our Partners
+          </h2>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_4.png"
+                class="img-fluid"
+                alt="Sponsor 1"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_3.png"
+                class="img-fluid"
+                alt="Sponsor 2"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_2.jpg"
+                class="img-fluid"
+                alt="Sponsor 3"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_1.png"
+                class="img-fluid"
+                alt="Sponsor 4"
+                style="max-height: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- our activity section -->
     <section id="ourActivity">
       <div class="container py-5">
@@ -640,6 +685,19 @@
         >
           Our Projects
         </h2>
+        <p class="col-lg-8 mx-auto lead justify-mytext">
+          Di Terrae, kami memberdayakan komunitas lokal melalui ekowisata
+          berkelanjutan, selaras dengan Tujuan Pembangunan Berkelanjutan (SDG)
+          global. Proyek kami menciptakan lapangan kerja, mendukung ketahanan
+          komunitas, dan mendorong pelestarian lingkungan. Dengan melibatkan
+          penduduk lokal dalam sektor pariwisata, kami membantu
+          <strong>mengurangi kemiskinan (SDG 1)</strong>,
+          <strong>membangun komunitas berkelanjutan (SDG 11)</strong>, dan
+          <strong>berkontribusi pada aksi iklim (SDG 13)</strong>.
+        </p>
+        <p class="col-lg-8 mx-auto my-5 fw-semibold fs-3 text-center">
+          Jelajahi inisiatif kami dan jadilah bagian dari perubahan!
+        </p>
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
@@ -719,6 +777,70 @@
               Jawa.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section id="ourReview">
+      <div class="container py-5">
+        <h2
+          class="display-5 fw-semibold text-body-emphasis lh-1 mb-5 text-center"
+        >
+          Reviews
+        </h2>
+        <div
+          class="card shadow-sm p-4 text-center"
+          style="max-width: 400px; margin: auto; border-radius: 15px"
+        >
+          <img
+            src="./assets/images/review_1.jpg"
+            class="rounded-circle mx-auto d-block mb-3"
+            alt="Profile Picture"
+            width="100px"
+          />
+          <h5 class="fw-bold">Lina Rischawy</h5>
+          <p class="text-muted mb-2">Volunteer</p>
+          <div class="mb-2">
+            <span style="color: gold" class="fs-3">★ ★ ★ ★ ★</span>
+          </div>
+
+          <p class="text-muted text-start">
+            Saya Lina, relawan pertama dalam tim ini, dan saya sangat terkesan
+            dengan apa yang ingin dicapai oleh kelompok ini. Ini adalah
+            pendekatan yang tepat— masa depan kita bergantung pada generasi
+            muda, dan planet kita berada di ambang kehancuran yang tidak dapat
+            diperbaiki.
+            <span id="moreText" style="display: none">
+              Kita sering menganggap Bumi sebagai sesuatu yang biasa,
+              mencemarinya dengan limbah, deforestasi, dan tindakan yang tidak
+              bertanggung jawab. <br />
+
+              Di Jerman, kami telah berdemonstrasi selama lebih dari 40 tahun
+              untuk perlindungan lingkungan, tetapi perubahan iklim hampir tidak
+              bisa dihentikan. Setiap orang harus berkontribusi, tetapi
+              pemerintah juga harus bertindak. Di negara kami, kemasan plastik
+              berlebihan dan kantong plastik dilarang— masyarakat membawa tas
+              kain sendiri. Pajak plastik atau penggunaan kemasan dari karton
+              daur ulang bisa menjadi solusi. <br />
+
+              Masalah besar lainnya adalah pengelolaan sampah. Mengapa begitu
+              kotor meskipun keindahan alam dan budaya Indonesia luar biasa? Di
+              mana tempat sampah, pengumpulan sampah, dan program daur ulang?
+              Pendidikan di sekolah, sosialisasi di desa-desa, dan kampanye
+              media sangat penting. <br />
+
+              Terrae Volunteer hadir untuk mengambil peran di mana pemerintah
+              gagal, dan itu patut didukung. Selama saya di sini, kami
+              mengumpulkan sampah, meningkatkan kesadaran, dan mencari solusi
+              untuk pengelolaan limbah.
+            </span>
+          </p>
+
+          <!-- Read More Button -->
+          <button class="btn btn-dark" id="readMoreBtn" onclick="toggleText()">
+            Baca Lebih Lanjut
+          </button>
         </div>
       </div>
     </section>
@@ -803,5 +925,20 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script id="ourReviewScript">
+      function toggleText() {
+        var moreText = document.getElementById("moreText");
+        var btnText = document.getElementById("readMoreBtn");
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "inline";
+          btnText.innerHTML = "Baca Lebih Sedikit";
+        } else {
+          moreText.style.display = "none";
+          btnText.innerHTML = "Baca Lebih Lanjut";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -149,6 +149,51 @@
       </div>
     </section>
 
+    <!-- sponsor section -->
+    <section id="ourPartners">
+      <div class="py-5">
+        <div class="container text-center">
+          <h2 class="display-5 fw-semibold text-body-emphasis lh-1 mb-5">
+            Our Partners
+          </h2>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_4.png"
+                class="img-fluid"
+                alt="Sponsor 1"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_3.png"
+                class="img-fluid"
+                alt="Sponsor 2"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_2.jpg"
+                class="img-fluid"
+                alt="Sponsor 3"
+                style="max-height: 100px"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <img
+                src="./assets/images/logo_1.png"
+                class="img-fluid"
+                alt="Sponsor 4"
+                style="max-height: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- our activity section -->
     <section id="ourActivity">
       <div class="container py-5">
@@ -627,10 +672,22 @@
     <section id="ourProjects">
       <div class="container py-5">
         <h2
-          class="display-5 fw-semibold text-body-emphasis lh-1 mb-5 text-center"
+          class="display-5 fw-semibold text-body-emphasis lh-1 mb-3 text-center"
         >
           Our Projects
         </h2>
+        <p class="col-lg-8 mx-auto lead justify-mytext">
+          At Terrae, we empower local communities through sustainable
+          ecotourism, aligning with global Sustainable Development Goals. Our
+          projects create jobs, support community resilience, and promote
+          environmental conservation. By involving local residents in tourism,
+          we help <strong>reduce poverty (SDG 1)</strong>,
+          <strong>foster sustainable communities (SDG 11)</strong>, and
+          <strong>contribute to climate action (SDG 13)</strong>.
+        </p>
+        <p class="col-lg-8 mx-auto my-5 fw-semibold fs-3 text-center">
+          Explore our initiatives and be part of the change!
+        </p>
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
@@ -714,6 +771,66 @@
       </div>
     </section>
 
+    <!-- review section -->
+    <section id="ourReview">
+      <div class="container py-5">
+        <h2
+          class="display-5 fw-semibold text-body-emphasis lh-1 mb-5 text-center"
+        >
+          Reviews
+        </h2>
+        <div
+          class="card shadow-sm p-4 text-center"
+          style="max-width: 400px; margin: auto; border-radius: 15px"
+        >
+          <img
+            src="./assets/images/review_1.jpg"
+            class="rounded-circle mx-auto d-block mb-3"
+            alt="Profile Picture"
+            width="100px"
+          />
+          <h5 class="fw-bold">Lina Rischawy</h5>
+          <p class="text-muted mb-2">Volunteer</p>
+          <div class="mb-2">
+            <span style="color: gold" class="fs-3">★ ★ ★ ★ ★</span>
+          </div>
+
+          <p class="text-muted text-start">
+            I’m Lina, the first volunteer on the team, and I’m truly impressed
+            by what this group aims to achieve. This is the right approach—our
+            future depends on the youth, and our planet is on the brink of
+            irreversible destruction.
+            <span id="moreText" style="display: none">
+              We take Earth for granted, polluting it with waste, deforestation,
+              and thoughtless actions. <br />
+
+              In Germany, we've protested for over 40 years for environmental
+              protection, but climate change is nearly unstoppable. Everyone
+              must contribute, but the government must act too. In our country,
+              excessive plastic packaging and plastic bags are banned—people
+              bring fabric bags. A plastic tax or recycled cardboard packaging
+              could be solutions. <br />
+
+              Another major issue is waste disposal. Why is it so dirty despite
+              Indonesia’s natural and cultural beauty? Where are the trash cans,
+              waste collection, and recycling programs? Education in schools,
+              awareness in villages, and media campaigns are crucial. <br />
+
+              Terrae Volunteer is stepping in where the government has failed,
+              and that deserves support. During my time here, we collected
+              waste, raised awareness, and explored solutions for waste
+              management.
+            </span>
+          </p>
+
+          <!-- Read More Button -->
+          <button class="btn btn-dark" id="readMoreBtn" onclick="toggleText()">
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- contact section -->
     <section id="ourContact">
       <div class="container my-5">
@@ -792,5 +909,20 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script id="ourReviewScript">
+      function toggleText() {
+        var moreText = document.getElementById("moreText");
+        var btnText = document.getElementById("readMoreBtn");
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "inline";
+          btnText.innerHTML = "Read Less";
+        } else {
+          moreText.style.display = "none";
+          btnText.innerHTML = "Read More";
+        }
+      }
+    </script>
   </body>
 </html>
