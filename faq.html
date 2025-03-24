@@ -107,131 +107,636 @@
       </header>
     </section>
 
-    <!-- hero section -->
-    <section>
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">
-          Frequently Asked Questions
-        </h1>
-        <div class="container mt-5">
-          <h2 class="text-center fw-bold">
-            FAQs - Terrae Volunteers - Worldpackers
+    <!-- faq volunteers section -->
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-dark">Frequently Asked Questions</h1>
+        <p class="text-muted">
+          Everything you need to know about Terrae Volunteers
+        </p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              1. How do I register as a volunteer?
+            </button>
           </h2>
-          <div class="mt-4 text-start">
-            <h5 class="fw-bold">1. How do I register as a volunteer?</h5>
-            <p>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
               Prospective volunteers must register through the
-              <em>Worldpackers</em> application before joining the program. This
-              registration ensures that all participants are officially recorded
-              and gain access to program information.
-            </p>
+              <a
+                href="https://www.worldpackers.com/locations/terrae-basecamp-graha-semeru-housing"
+                target="_blank"
+                rel="noopener"
+                ><em>Worldpackers</em></a
+              >
+              application before joining the program. This ensures official
+              registration and access to program details.
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
               2. Is there a fee to participate in the program?
-            </h5>
-            <p>
-              Yes, volunteers are required to contribute
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, volunteers must contribute
               <strong>$20 per person per day</strong> to support operational
-              costs and contributions to the local community.
-            </p>
+              costs and community contributions.
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">3. What is the contribution payment system?</h5>
-            <ul>
-              <li>
-                <strong>50% deposit</strong> must be paid no later than the
-                first day during the briefing.
-              </li>
-              <li>
-                <strong>The remaining 50%</strong> must be paid halfway through
-                the stay.
-              </li>
-              <li>
-                Payments can be made via <em>e-banking transfer</em> or
-                <em>cash</em> on-site.
-              </li>
-            </ul>
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              3. What is the contribution payment system?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <strong>50% deposit</strong> due by the first day of briefing.
+                </li>
+                <li>
+                  <strong>Remaining 50%</strong> payable halfway through the
+                  stay.
+                </li>
+                <li>
+                  Payments via <em>e-banking transfer</em> or
+                  <em>cash</em> on-site.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
               4. What facilities are provided to volunteers?
-            </h5>
-            <ul>
-              <li>Accommodation in a local resident's traditional house.</li>
-              <li>Meals <strong>three times a day</strong>.</li>
-              <li>
-                Shuttle transportation within the Senduro area, including
-                <strong>free pick-up from Klakah Station</strong> during office
-                hours (<em>07:00 - 17:00 WIB</em>).
-              </li>
-              <li>Eco-tourism and cultural experiences.</li>
-              <li><strong>E-Certificate</strong> upon program completion.</li>
-            </ul>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Accommodation in a traditional local home.</li>
+                <li>Three daily meals.</li>
+                <li>
+                  Shuttle transport within Senduro, including
+                  <strong>free pick-up from Klakah Station</strong> (07:00 -
+                  17:00 WIB).
+                </li>
+                <li>Eco-tourism and cultural experiences.</li>
+                <li><strong>E-Certificate</strong> upon completion.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">5. How long is the volunteer program?</h5>
-            <p>
-              The minimum duration is <strong>one week</strong>, while the
-              maximum duration is <strong>12 weeks</strong>.
-            </p>
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              5. How long is the volunteer program?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Minimum: <strong>1 week</strong>. Maximum:
+              <strong>12 weeks</strong>.
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">
-              6. Is there an age limit to join as a volunteer?
-            </h5>
-            <p>
-              Yes, participants must be at least <strong>18 years old</strong>.
-              If under this age, they must have written permission from a parent
-              or guardian.
-            </p>
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              6. Is there an age limit to join?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Participants must be at least <strong>18 years old</strong>. Those
+              under 18 require parental permission.
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">7. What is prohibited during the program?</h5>
-            <ul>
-              <li>
-                Bringing or consuming alcohol, narcotics, or illegal substances.
-              </li>
-              <li>Engaging in discrimination, harassment, or violence.</li>
-              <li>Damaging flora and fauna in the eco-tourism area.</li>
-              <li>
-                Leaving the program area without permission from the
-                coordinator.
-              </li>
-            </ul>
+        <!-- Question 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              7. What is prohibited during the program?
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>No alcohol, narcotics, or illegal substances.</li>
+                <li>No discrimination, harassment, or violence.</li>
+                <li>No damage to flora and fauna.</li>
+                <li>No leaving the program area without permission.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">8. What happens if I violate the rules?</h5>
-            <ul>
-              <li>
-                <strong>Minor violations</strong> will receive a verbal warning.
-              </li>
-              <li>
-                <strong>Serious violations</strong>, such as illegal acts or
-                environmental damage, may result in expulsion from the program
-                without a refund.
-              </li>
-              <li>
-                If the violation involves legal consequences, Terrae has the
-                right to report it to the authorities.
-              </li>
-            </ul>
+        <!-- Question 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              8. What happens if I violate the rules?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Minor violations</strong>: Verbal warning.</li>
+                <li>
+                  <strong>Serious violations</strong>: Possible expulsion
+                  without refund.
+                </li>
+                <li>Legal matters may be reported to authorities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">
+        <!-- Question 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
               9. What is the cancellation and refund policy?
-            </h5>
-            <ul>
-              <li>
-                <strong>Before arrival:</strong> The deposit is
-                <strong>non-refundable</strong>, except in emergency situations
-                with proof.
-              </li>
-              <li>
-                <strong>After arrival:</strong> No refunds are given unless the
-                program is canceled by Terrae.
-              </li>
-            </ul>
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <strong>Before arrival:</strong> Non-refundable deposit,
+                  except in emergencies.
+                </li>
+                <li>
+                  <strong>After arrival:</strong> No refunds unless the program
+                  is canceled by Terrae.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <h5 class="fw-bold">
+        <!-- Question 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
+              10. Who can I contact in case of emergency?
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTen"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Contact the program coordinator via the number provided upon
+              arrival.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq freelance section -->
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-dark">Frequently Asked Questions</h1>
+        <p class="text-muted">
+          Everything you need to know about Terrae Guild House
+        </p>
+      </div>
+
+      <div class="accordion" id="freelanceFaqAccordion">
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              1. How do I register as a freelance worker?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              Prospective freelance workers must register through the
+              <strong>Guild House</strong> platform before joining. This ensures
+              all applicants are officially recorded and can access job
+              opportunities.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              2. Is there a fee to participate as a freelance worker?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              No, there is <strong>no registration fee</strong> to become a
+              freelance worker at Terrae Guild House.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              3. What is the payment system for freelance workers?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              Freelancers receive payments based on a
+              <strong>commission system</strong>. The commission amount is
+              tentative and depends on the type of work performed.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              4. What facilities are provided to freelance workers?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Pick-up and drop-off service (availability depends on the
+                  area).
+                </li>
+                <li>
+                  Opportunity to work in a dynamic environment with eco-tourism
+                  and community-based projects.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              5. How long is the freelance work duration?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              The duration depends on job availability and agreements between
+              the worker and Terrae Guild House. Freelancers can take on
+              multiple assignments based on their availability.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              6. Is there an age limit to join as a freelance worker?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              Yes, applicants must be at least <strong>18 years old</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              7. What is prohibited during the work period?
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSeven"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Engaging in unprofessional behavior, harassment, or
+                  discrimination.
+                </li>
+                <li>Failing to complete assigned tasks responsibly.</li>
+                <li>Violating company policies or local regulations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              8. What happens if I violate the rules?
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingEight"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li><strong>Minor violations</strong>: Warning.</li>
+                <li>
+                  <strong>Serious violations</strong>: Possible termination of
+                  freelance work opportunities.
+                </li>
+                <li>Legal violations may be reported to the authorities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseNine"
+              aria-expanded="false"
+              aria-controls="collapseNine"
+            >
+              9. What is the cancellation policy for freelance workers?
+            </button>
+          </h2>
+          <div
+            id="collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingNine"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              If a freelancer cannot complete an assigned job, they must notify
+              the coordinator as soon as possible. Repeated cancellations
+              without valid reasons may result in removal from future job
+              opportunities.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTen"
+              aria-expanded="false"
+              aria-controls="collapseTen"
+            >
               10. Who can I contact in case of an emergency?
-            </h5>
-            <p>
-              Volunteers can contact the program coordinator via the provided
-              contact number upon arrival.
-            </p>
+            </button>
+          </h2>
+          <div
+            id="collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTen"
+            data-bs-parent="#freelanceFaqAccordion"
+          >
+            <div class="accordion-body">
+              Freelance workers can contact the program coordinator via the
+              provided contact number upon assignment.
+            </div>
           </div>
         </div>
       </div>
